@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <div class="dashboard">
+    <nav>
+      <div class="sidebar-header">
+        <a class="logo-wrapper">
+          <img src="./logo.svg" alt="Logo">
+          <h2 class="hidden">LOGO</h2>
+        </a>
+        <!-- <button class="toggle-btn">
+          <img src="./expand.svg" alt="expand button">
+        </button> -->
+      </div>
+
+      <div class="sidebar-links">
+        <a class="link active" href="../index.html">
+          <img src="./home.svg" alt="Home">
+          <span class="hidden">Home</span>
+        </a>
+        <a class="link" href="../Project/index.html">
+          <img src="./projects.svg" alt="Projects">
+          <span class="hidden">Projects</span>
+        </a>
+        <a class="link" href="../dashboard/index.html">
+          <img src="./dashboard.svg" alt="Dashboard">
+          <span class="hidden">Dashboard</span>
+        </a>
+        <a class="link" href="../task/index.html">
+          <img src="./tasks.svg" alt="Tasks">
+          <span class="hidden">Tasks</span>
+        </a>
+      </div>
+
+      <div class="sidebar-bottom">
+        <div class="sidebar-links">
+          <a class="link">
+            <img src="./settings.svg" alt="Settings">
+            <span class="hidden">Settings</span>
+          </a>
+        </div>
+
+        <div class="user-profile">
+          <div class="user-avatar">
+            <img src="./avatar.png" alt="User Avatar">
+          </div>
+          <div class="user-details hidden">
+            <p class="username">Rishabh Jain</p>
+            <p class="user-email">rishabhcool7201@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="content">
+      <div class="content-header">
+        <h1>Welcome, Rishabh Jain</h1>
+        <p>Daily Tasks Overview</p>
+      </div>
+
+      <!-- Statistics Section -->
+      <section class="statistics">
+        <div class="stat-card">
+          <h3>Total Projects</h3>
+          <p>8</p>
+        </div>
+        <div class="stat-card">
+          <h3>Tasks Completed</h3>
+          <p>42</p>
+        </div>
+        <div class="stat-card">
+          <h3>Pending Tasks</h3>
+          <p>12</p>
+        </div>
+        <div class="stat-card">
+          <h3>New Messages</h3>
+          <p>3</p>
+        </div>
+      </section>
+
+      <!-- Task Completion Graph Section -->
+      <section class="task-graph">
+        <h2>Task Completion Over the Last 6 Months</h2>
+        <canvas id="taskCompletionChart"></canvas>
+      </section>
+
+      <section class="project-info">
+        <h2>Project Information</h2>
+        <div class="info-card">
+          <h3>Current Project: Stock Trading Website</h3>
+          <p><strong>Status:</strong> In Progress</p>
+          <p><strong>Deadline:</strong> August 31, 2024</p>
+          <p><strong>Team Members:</strong> 5</p>
+        </div>
+
+      <!-- Data Table Section -->
+      <section class="data-table">
+        <h2>Project Status</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Project Name</th>
+              <th>Status</th>
+              <th>Deadline</th>
+              <th>Team Members</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Project Alpha</td>
+              <td>In Progress</td>
+              <td>30th Aug 2024</td>
+              <td>Rishabh, John</td>
+            </tr>
+            <tr>
+              <td>Project Beta</td>
+              <td>Completed</td>
+              <td>15th Aug 2024</td>
+              <td>Rishabh, Emily</td>
+            </tr>
+            <tr>
+              <td>Project Gamma</td>
+              <td>Pending</td>
+              <td>20th Sept 2024</td>
+              <td>Rishabh, Alex, Kate</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="data-table">
+        <h2>Recent Activites</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Project Name</th>
+              <th>Status</th>
+              <th>Deadline</th>
+              <th>Team Members</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Project Alpha</td>
+              <td>In Progress</td>
+              <td>30th Aug 2024</td>
+              <td>Rishabh, John</td>
+            </tr>
+            <tr>
+              <td>Project Beta</td>
+              <td>Completed</td>
+              <td>15th Aug 2024</td>
+              <td>Rishabh, Emily</td>
+            </tr>
+            <tr>
+              <td>Project Gamma</td>
+              <td>Pending</td>
+              <td>20th Sept 2024</td>
+              <td>Rishabh, Alex, Kate</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>

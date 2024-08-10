@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <div class="dashboard">
+    <nav>
+      <div class="sidebar-header">
+        <a class="logo-wrapper">
+          <img src="./logo.svg" alt="Logo">
+          <h2 class="hidden">LOGO</h2>
+        </a>
+        <!-- <button class="toggle-btn">
+          <img src="./expand.svg" alt="expand button">
+        </button> -->
+      </div>
+
+      <div class="sidebar-links">
+        <a class="link active" href="../index.html">
+          <img src="./home.svg" alt="Home">
+          <span class="hidden">Home</span>
+        </a>
+        <a class="link" href="../Project/index.html">
+          <img src="./projects.svg" alt="Projects">
+          <span class="hidden">Projects</span>
+        </a>
+        <a class="link" href="../dashboard/index.html">
+          <img src="./dashboard.svg" alt="Dashboard">
+          <span class="hidden">Dashboard</span>
+        </a>
+        <a class="link" href="../task/index.html">
+          <img src="./tasks.svg" alt="Tasks">
+          <span class="hidden">Tasks</span>
+        </a>
+      </div>
+
+      <div class="sidebar-bottom">
+        <div class="sidebar-links">
+          <a class="link">
+            <img src="./settings.svg" alt="Settings">
+            <span class="hidden">Settings</span>
+          </a>
+        </div>
+
+        <div class="user-profile">
+          <div class="user-avatar">
+            <img src="./avatar.png" alt="User Avatar">
+          </div>
+          <div class="user-details hidden">
+            <p class="username">Rishabh Jain</p>
+            <p class="user-email">rishabhcool7201@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="content">
+      <div class="content-header">
+        <!-- <h1>Welcome, Rishabh Jain</h1>
+        <p></p> -->
+      </div>
+
+      <!-- Personal Information Section -->
+      <section class="personal-info">
+        <h2>Personal Information</h2>
+        <div class="info-card">
+          <img src="passport size photo.jpg" alt="Rishabh Jain" class="personal-image">
+          <div class="info-details">
+            <p><strong>Name:</strong> Rishabh Jain</p>
+            <p><strong>College:</strong> VIT Bhopal University</p>
+            <p><strong>Degree:</strong> B.Tech in Computer Science</p>
+            <p><strong>Email:</strong> rishabhcool7201@gmail.com</p>
+            <p><strong>Contact:</strong> +91 9654304357</p>
+          </div>
+        </div>
+        <div class="extra-info">
+          <!-- <div class="info-box">
+            <h3>Contact Information</h3>
+            <p><strong>Phone:</strong> +91 9654304357</p>
+            <p><strong>Address:</strong> B221 Second Floor, Derawal Nagar, Delhi, India</p>
+          </div> -->
+          <div class="info-box">
+            <h3>Skills</h3>
+            <p><strong>Programming:</strong> C++, Python, Java</p>
+            <p><strong>Web Development:</strong> HTML, CSS, JavaScript, React.js</p>
+          </div>
+          <div class="info-box">
+            <h3>Experience</h3>
+            <p><strong></strong> Web Development Intern at Zidio(present)</p>
+            <p><strong></strong>Exintern at Saitech as Web Devloper(June 2024 - August 2024)</p>
+          </div>
+          <div class="info-box">
+            <h3>Skills Potential</h3>
+            <div class="chart-container">
+              <div class="chart">
+                <span class="percent">75%</span>
+              </div>
+              <p>Overall Skill Mastery</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="resume-upload">
+        <h2>Resume</h2>
+        <div class="resume-card">
+          <p>You can download my resume by clicking the button below:</p>
+          <a href="https://drive.google.com/file/d/19u83VqzCxuf-GmR1yoD24Y9l3U59LWUX/view?usp=drive_link" download="Rishabh_Jain_Resume.pdf" class="download-btn">Download Resume</a>
+        </div>
+      </section>
+
+      <!-- Statistics Section -->
+      <!-- <section class="statistics">
+        <div class="stat-card">
+          <h3>Total Projects</h3>
+          <p>8</p>
+        </div>
+        <div class="stat-card">
+          <h3>Tasks Completed</h3>
+          <p>42</p>
+        </div>
+        <div class="stat-card">
+          <h3>Pending Tasks</h3>
+          <p>12</p>
+        </div>
+        <div class="stat-card">
+          <h3>New Messages</h3>
+          <p>3</p>
+        </div>
+      </section> -->
+
+      <!-- Task Completion Graph Section -->
+      <!-- <section class="task-graph">
+        <h2>Task Completion Over the Last 6 Months</h2>
+        <canvas id="taskCompletionChart"></canvas>
+      </section> -->
+
+      <!-- Data Table Section -->
+      
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>
